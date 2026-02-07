@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <p>youtube scbie btn</p>
+    <button onclick="btunchange()"  class="sub">subscribe</button>
+
+    <p>rock paper scissor</p>
+    
+    
+    
+    
+    
+    <script>
+        function btunchange(){
+            const buttonele = document.querySelector('.sub');
+            if (buttonele.innerText === 'subscribe'){
+                buttonele.innerText = 'subscribed';
+            }
+            else{
+                buttonele.innerText = 'subscribe';
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rockk paper</title>
+</head>
+<body>
+
+    <p>amazon shipping calculator</p>
+    <p>order under 40</p>
+    <p>order over 40</p>
+    <input onkeydown=" if(event.key === 'Enter') {callfunc()}" type="text" placeholder="enter" class="in" >
+    <button onclick="callfunc();" >calculate</button>
+    <p class="dis"></p>
+    <script>
+         
+
+
+
+
+        function callfunc(){
+            let val =0;
+            const inp = document.querySelector('.in');
+            val = Number(inp.value)
+            if (val < 40){
+                val = val + 10;
+            }
+             document.querySelector('.dis').innerText = `$ ${val}` ; 
+            
+
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
